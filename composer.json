@@ -1,0 +1,20 @@
+{
+  "name": "jiromm/mother-of-daemons",
+  "description": "Dynamically scalable daemons manager",
+  "keywords": ["daemon", "react"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aram Baghdasaryan",
+      "email": "aram@jiromm.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jiromm\\MotherOfDaemons\\": "src/"
+    }
+  },
+  "require": {
+    "react/child-process": "^0.5.0"
+  }
+}
