@@ -2,7 +2,7 @@
 
 namespace Jiromm\MotherOfDaemons\Exception;
 
-class NotFoundException extends MotherOfDaemonException
+class MotherOfDaemonException extends \RuntimeException
 {
 
 }

@@ -2,7 +2,7 @@
 
 namespace Jiromm\MotherOfDaemons\Exception;
 
-class UnacceptableException extends \RuntimeException
+class UnacceptableException extends MotherOfDaemonException
 {
 
 }
