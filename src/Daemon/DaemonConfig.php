@@ -6,7 +6,7 @@ class DaemonConfig implements \ArrayAccess
 {
     private $storage = [];
 
-    public function __construct(array $data)
+    public function __construct(array $data = [])
     {
         $this->storage = array_merge([
             /**
