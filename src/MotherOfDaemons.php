@@ -138,6 +138,6 @@ class MotherOfDaemons
 
     private function removeDaemon(Process $process): void
     {
-        $process->terminate(SIGTERM);
+        $process->terminate(SIGUSR1);
     }
 }
