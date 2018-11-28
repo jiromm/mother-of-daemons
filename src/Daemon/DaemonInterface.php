@@ -4,9 +4,11 @@ namespace Jiromm\MotherOfDaemons\Daemon;
 
 interface DaemonInterface
 {
-    public function getConfig() : \ArrayAccess;
+    public function getName(): string;
 
-    public function getCommand() : string;
+    public function getConfig(): DaemonConfig;
 
-    public function getMessageCount() : int;
+    public function getCommand(): string;
+
+    public function getMessageCount(): int;
 }

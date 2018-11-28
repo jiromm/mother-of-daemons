@@ -9,14 +9,15 @@ require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../examples/ImageHandlerDaemon.php';
 
 try {
-    $daemons = new DaemonCollection();
+    $mod = new MotherOfDaemons();
+    $command = '';
 
-    $daemons->add(new ImageHandlerDaemon('building blocks'));
-    $daemons->add(new ImageHandlerDaemon('animals'));
-    $daemons->add(new ImageHandlerDaemon('animals'));
+    if (isset($argv[1])) {
+        array_shift($argv);
+        $command = implode(' ', $argv);
+    }
 
-    $mod = new MotherOfDaemons($daemons);
-    $mod->run(true);
+    $mod->command($command);
 } catch (MotherOfDaemonException $e) {
     echo $e->getMessage() . PHP_EOL;
 }

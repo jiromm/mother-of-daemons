@@ -14,12 +14,17 @@ class ImageHandlerDaemon implements DaemonInterface
         $this->dirName = $dirName;
     }
 
-    public function getConfig(): \ArrayAccess
+    public function getName(): string
+    {
+        return __CLASS__ . '::' . str_replace(' ', '-', $this->dirName);
+    }
+
+    public function getConfig(): DaemonConfig
     {
         return new DaemonConfig([
-            'threshold' => 2,
-            'interval' => 1,
-            'limit' => 3,
+            'threshold' => 20000,
+            'interval' => 10000,
+            'limit' => 1,
         ]);
     }
 

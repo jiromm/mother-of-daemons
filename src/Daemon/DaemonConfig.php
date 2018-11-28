@@ -49,4 +49,9 @@ class DaemonConfig implements \ArrayAccess
     {
         return isset($this->storage[$offset]) ? $this->storage[$offset] : null;
     }
+
+    public function getArrayCopy(): array
+    {
+        return $this->storage;
+    }
 }

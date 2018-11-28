@@ -1,7 +1,7 @@
 {
   "name": "jiromm/mother-of-daemons",
-  "description": "Dynamically scalable daemons manager",
-  "keywords": ["daemon", "react"],
+  "description": "The Mother of Daemons",
+  "keywords": ["daemon", "reactphp"],
   "license": "MIT",
   "authors": [
     {
@@ -9,12 +9,15 @@
       "email": "aram@jiromm.com"
     }
   ],
+  "require": {
+    "jiromm/react-signal-handler": "^1.1",
+    "react/child-process": "^0.5.0",
+    "react/http": "^0.8",
+    "zendframework/zend-http": "^2.7"
+  },
   "autoload": {
     "psr-4": {
-      "Jiromm\\MotherOfDaemons\\": "src/"
+      "Jiromm\\MotherOfDaemons\\": "src"
     }
-  },
-  "require": {
-    "react/child-process": "^0.5.0"
   }
 }
