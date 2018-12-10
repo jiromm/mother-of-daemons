@@ -10,9 +10,9 @@ See also the [examples](examples).
 ```php
 <?php
 
-use Jiromm\DaemonMaster\MotherOfDaemons;
-use Jiromm\DaemonMaster\Daemon\DaemonCollection;
-use Jiromm\DaemonMaster\Exception\MotherOfDaemonException;
+use Jiromm\MotherOfDaemons\MotherOfDaemons;
+use Jiromm\MotherOfDaemons\Daemon\DaemonCollection;
+use Jiromm\MotherOfDaemons\Exception\MotherOfDaemonException;
 use Examples\ImageHandlerDaemon;
 
 require __DIR__ . '/../vendor/autoload.php';

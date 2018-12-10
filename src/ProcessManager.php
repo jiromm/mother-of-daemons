@@ -1,6 +1,6 @@
 <?php
 
-namespace Jiromm\DaemonMaster;
+namespace Jiromm\MotherOfDaemons;
 
 use Jiromm\MotherOfDaemons\Exception\NotFoundException;
 use Jiromm\MotherOfDaemons\Exception\UnacceptableException;
