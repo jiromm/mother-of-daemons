@@ -1,4 +1,4 @@
-# DaemonMaster
+# Mother of Daemons
 The Mother of Deamons
 
 ## Quickstart example
