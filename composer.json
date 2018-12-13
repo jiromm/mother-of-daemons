@@ -11,10 +11,10 @@
   ],
   "require": {
     "ext-pcntl": "*",
-    "jiromm/react-signal-handler": "^1.1",
+    "jiromm/react-signal-handler": "1.1.0",
     "react/child-process": "^0.5.0",
     "react/http": "^0.8",
-    "zendframework/zend-http": "^2.7"
+    "zendframework/zend-http": "^2.8"
   },
   "autoload": {
     "psr-4": {
